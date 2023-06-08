@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.topview {
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+  width: 100%;
+}
+
+div.toptitle{
+  flex: 1.3;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.topbody {
+  flex: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.topbody span {
+  height: 100%;
+  border: 1px solid black;
+  background-color: rgb(217, 215, 215);
+  padding: 0 60px;
+  margin: 0 180px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.toptail {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.middleview {
+  display: flex;
+  flex-direction: column;
+
+  /* align-items: center; */
+  /* justify-content: center; */
+  height: 70%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.top {
+  flex: 1;
+}
+
+.title {
+  display: flex;
+  align-items: center; /* 세로 정렬을 위해 추가 */
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+}
+
+.title_left,
+.title_right {
+  flex: 1;
+}
+
+.title_middle {
+  flex: 0.5;
+}
+
+.center {
+  flex: 4;
+}
+
+#list {
+  height: 100%;
+  overflow: auto;
+}
+
+.list_index {
+  height: 18%;
+  font-size: 30px;
+  border: 1px solid rgb(101, 101, 101,0.3);
+
+  display: flex;
+  align-items: center;
+}
+
+#list_top {
+
+  background-color: rgba(174, 169, 169, 0.579);
+}
+
+.list_index span {
+  flex: 1;
+  display: inline-block;
+  text-align: center;
+  /* border: 1px solid black; */
+  }
