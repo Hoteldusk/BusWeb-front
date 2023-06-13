@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap"
+    rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="css/searchBus.css" />
     <script src="js/script.js"></script>
     <title>노선 조회</title>
@@ -11,7 +17,9 @@
   <body>
     <section id="view">
     <section class="topview">
-      <div class="toptitle">시외버스</div>
+      <div class="toptitle">
+        <a href="index.html">시외버스</a>
+      </div>
       <div class="topbody">
         <form action="#">
           <select name="str_bus" id="select1">
@@ -32,6 +40,7 @@
             <option value="str0014">광주농협용주지점</option>
           </select>
         </form>
+        <div>노선 조회</div>
         <form action="#">
           <select name="end_bus" id="select2">
             <option value="end_default">도착지를 선택해주세요</option>
@@ -46,7 +55,9 @@
         </form>
       </div>
       <div class="toptail">
-        <span>버스 애니메이션 자리</span>
+        <div class="image-container">
+          <img src="/etc/busimg.png" class="moving-image" alt="Moving Image">
+        </div>
       </div>
     </section>
 
