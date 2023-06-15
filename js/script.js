@@ -10,8 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const stopAni_end = document.getElementById("stop-image-end");
     const moveAni = document.getElementById("moving-image");
 
-    const stopAniDefault = document.getElementById("stop-image-str").animation;
-    const moveAniDefault = document.getElementById("stop-image-str").animation;
+    // const stopAniDefault = document.getElementById("stop-image-str").animation;
+    // const moveAniDefault = document.getElementById("stop-image-str").animation;
 
     if (select1.value === "str_default") {
       alert("첫 번째 선택지를 먼저 선택해주세요.");
@@ -20,6 +20,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // imageview.style.display = "none";
       mainviewForm.style.display = "none";
+
+      stopAni_str.style.animationPlayState = "paused";
+      stopAni_end.style.animationPlayState = "paused";
+      moveAni.style.animationPlayState = "paused";
 
       return false;
     }
@@ -32,6 +36,10 @@ document.addEventListener("DOMContentLoaded", () => {
       moveAni.style.animationPlayState = "running";
     } else {
       mainviewForm.style.display = "none";
+
+      stopAni_str.style.animationPlayState = "paused";
+      stopAni_end.style.animationPlayState = "paused";
+      moveAni.style.animationPlayState = "paused";
     }
   }
 
