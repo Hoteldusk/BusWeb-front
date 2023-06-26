@@ -87,7 +87,6 @@ div.topbody {
   outline: 0;
   border: 3px solid rgb(118, 254, 0);
   padding: 15px;
-  /* margin: 0 100px; */
   border-radius: 9px;
   font-size: 20px;
 }
@@ -109,31 +108,28 @@ div.toptail {
 .stop-image-str {
   width: 50px;
   height: 100%;
-
   opacity: 0;
+
+  display: none;
   animation: fadeIn 10s ease-in-out infinite;
-  animation-fill-mode: backwards;
-  animation-play-state: paused;
 }
 .stop-image-end {
   width: 50px;
   height: 100%;
   margin-left: auto;
-
   opacity: 0;
-  animation-fill-mode: backwards;
+
+  display: none;
   animation: fadeIn 10s ease-in-out infinite;
-  animation-play-state: paused;
 }
 
 .moving-image {
   width: 100px;
   height: 100%;
-
   opacity: 0;
-  animation-fill-mode: backwards;
+
+  display: none;
   animation: moveImage 10s ease-in-out infinite;
-  animation-play-state: paused;
 }
 
 @keyframes moveImage {
@@ -165,6 +161,21 @@ div.toptail {
   }
   100% {
     opacity: 0;
+  }
+}
+
+.slide-in {
+  animation: change 0.5s ease forwards;
+}
+
+@keyframes change {
+  from {
+    transform: translateX(100%);
+    visibility: visible;
+  }
+
+  to {
+    transform: translateX(0%);
   }
 }
 
